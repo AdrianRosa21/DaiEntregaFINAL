@@ -1,0 +1,8 @@
+# Credenciales y datos locales: NUNCA se suben
+.env
+*.db
+*.db-journal
+
+# Archivos generados por Python
+__pycache__/
+*.pyc

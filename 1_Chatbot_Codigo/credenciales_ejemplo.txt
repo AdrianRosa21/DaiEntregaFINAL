@@ -1,0 +1,26 @@
+# ============================================================
+#  Credenciales de Guanaco Viajero (plantilla)
+#  0_configurar_credenciales.bat copia esta plantilla como .env y la abre.
+#  En el .env pegá tu API Key y tu API Secret de dashboard.vonage.com
+#  (NUNCA compartas ni subas el .env: tiene tus claves)
+# ============================================================
+
+# Dashboard de Vonage -> API Settings (arriba aparece la API key)
+VONAGE_API_KEY=tu_api_key
+VONAGE_API_SECRET=tu_api_secret
+
+# Número del Sandbox de WhatsApp: en dashboard.vonage.com/messages/sandbox
+# es el número "from" del ejemplo de WhatsApp (sin + ni espacios)
+VONAGE_WHATSAPP_NUMBER=14157386102
+
+# 1 = Sandbox de pruebas (lo que usamos en clase) | 0 = número oficial
+VONAGE_SANDBOX=1
+
+# Tu número de WhatsApp (solo para enviar_prueba.py): 503 + tu número, sin + ni espacios
+MI_NUMERO_WHATSAPP=503XXXXXXXX
+
+# Puerto del servidor Flask (el túnel de cloudflared apunta a este puerto)
+PUERTO=5000
+
+# Frase secreta para anonimizar números (cambiala por cualquier frase tuya)
+SAL_PRIVACIDAD=guanaco-viajero-sv-2026
